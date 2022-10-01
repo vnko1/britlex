@@ -5,162 +5,266 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Britlex</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
+      integrity="sha512-wpPYUAdjBVSE4KJnH1VR1HeZfpl1ub8YT/NKx4PuQ5NmX2tKuGu6U/JRp5y+Y8XG2tV+wKQpNHVUX03MfMFn9Q=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="./css/style.css" />
   </head>
   <body>
-    <header>
-      <nav>
-        <a href="./index.html">Britlex</a>
-        <ul>
-          <li><a href="#hero">Home</a></li>
-          <li><a href="#skills">Skills</a></li>
-          <li><a href="#about-us">About Us</a></li>
-          <li><a href="#pricing">Pricing</a></li>
-          <li><a href="#contacts">Contacts</a></li>
-        </ul>
-        <a href="#">Let`s Talk</a>
-      </nav>
+    <header class="header">
+      <div class="container header-container">
+        <nav class="header-nav">
+          <a href="./index.html" class="header-logo logo"
+            ><span class="logo-accent">Brit</span>lex</a
+          >
+          <ul class="header-nav-list">
+            <li class="header-nav-item"><a href="#home" class="header-nav-link">Home</a></li>
+            <li class="header-nav-item"><a href="#skills" class="header-nav-link">Skills</a></li>
+            <li class="header-nav-item">
+              <a href="#about-us" class="header-nav-link">About Us </a>
+            </li>
+            <li class="header-nav-item"><a href="#pricing" class="header-nav-link">Pricing</a></li>
+            <li class="header-nav-item">
+              <a href="#contacts" class="header-nav-link">Contacts</a>
+            </li>
+          </ul>
+        </nav>
+        <a href="#" class="header-link">Let’s Talk</a>
+      </div>
     </header>
     <main>
-      <section>
-        <h1 id="hero">Learn Any Foreign Language</h1>
-        <p>
-          With our teachers who write a program for each student, you will be able to make your
-          first sketch after the first lesson.
-        </p>
-        <a href="#">Get started</a>
-        <img
-          src="./images/learning-languages-bro.png"
-          alt="Studying language"
-          width="660"
-          height="660"
-        />
-      </section>
-      <section>
-        <h2 id="skills">Skills</h2>
-        <ul>
-          <li>
-            <img src="./images/shared-goals-bro.png" alt="Goals" width="390" height="390" />
-            <h3>Speaking</h3>
-            <p>
-              Improve your English skills and confidence. Live classes and interactive lessons
-              online. 20% extra free for a limited time only
-            </p>
-            <p>
-              Learn English online and improve your skills through our high-quality courses and
-              resources - all designed for adult language learners.
-            </p>
-            <a href="#">Learn more</a>
-          </li>
-          <li>
-            <img src="./images/typewriter.png" alt="Typewriting" width="292" height="292" />
-            <h3>Writing</h3>
-            <p>
-              One of the most important and extensive areas of natural science, the science that
-              studies substances, also their composition
-            </p>
-            <a href="#">Learn more</a>
-          </li>
-          <li>
-            <img src="./images/bookshelves.png" alt="Bookshelves" width="370" height="246" />
-            <h3>Reading</h3>
-            <p>
-              perception and response actions of the user resulting from the use and/or upcoming use
-              of the product, system or service
-            </p>
-            <a href="#">Learn more</a>
-          </li>
-          <li>
-            <img src="./images/podcast.png" alt="Podcast" width="382" height="254" />
-            <h3>Listening</h3>
-            <p>
-              Here you can find activities to practise your listening skills. Listening will help
-              you to improve your understanding
-            </p>
-            <a href="#">Learn more</a>
-          </li>
-        </ul>
-      </section>
-      <section>
-        <h2 id="about-us">About Us</h2>
-        <p>
-          The model offers a framework for discussing problems related to the user's experience, as
-          well as possible ways and means of solving them. Application development begins at the top
-          level (strategy), where the future software product is described quite abstractly from the
-          point of view of the expectations of both users and the customer.
-        </p>
-        <ul>
-          <li>
-            <p><span>800</span></p>
-            <!--tag span тільки для оформлення в css, якщо тільки html. семантично правильним буде тільки tag p -->
-            <p><span>Pupils</span></p>
-          </li>
-          <li>
-            <p><span>18</span></p>
-            <p><span>Teachers</span></p>
-          </li>
-          <li>
-            <p><span>6</span></p>
-            <p><span>Foreign languages</span></p>
-          </li>
-        </ul>
-        <img src="./images/business-competition.png" alt="Competition" width="500" height="500" />
-      </section>
-      <section>
-        <h2 id="pricing">Pricing</h2>
-        <ul>
-          <li>
-            <img src="./images/online-test.png" alt="Online test" width="310" height="310" />
-            <h3>Self-study online course</h3>
-            <p>
-              Start learning English online in live classes with qualified EC teachers and students
-              from all over the world.
-            </p>
-            <div>
-              <!--tag div та tag span для оформлення в css, якщо тільки html то ці теги тут не потрібні, по суті тільки tag p-->
-              <p>£5.99<span> per month</span></p>
+      <section id="home" class="hero-section">
+        <div class="container hero-container">
+          <div class="hero-content-container">
+            <div class="hero-title-container">
+              <h1 class="hero-title">Learn <br />Any Foreign Language</h1>
+              <svg class="hero-icon" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M65.093 71.055a21.679 21.679 0 0 0 11.683-7.585c3.669-4.622 5.296-10.394 4.58-16.252a21.721 21.721 0 0 0-8.362-14.675c-4.53-3.492-10.178-5.045-15.902-4.372-5.725.674-10.858 3.494-14.455 7.942-3.084 3.813-4.766 8.413-4.864 13.301-.16 7.936-2.894 15.642-7.7 21.697l-5.26 6.625a6.813 6.813 0 0 0 1.1 9.561l4.957 3.935a6.813 6.813 0 0 0 9.56-1.099l5.26-6.625c4.86-6.122 11.555-10.44 19.403-12.453ZM40.577 49.471a18.887 18.887 0 0 1 4.24-11.594c6.46-7.987 18.33-9.384 26.464-3.113 4.078 3.149 6.667 7.688 7.29 12.794a18.933 18.933 0 0 1-3.992 14.169 18.896 18.896 0 0 1-10.182 6.612c-8.27 2.12-15.38 6.61-20.595 12.997l-11.208-8.897c4.984-6.467 7.815-14.602 7.983-22.968ZM27.601 78.736l.706-.89L38.51 88.043l-.276.347a3.996 3.996 0 0 1-.474.497L27.6 78.736Zm2.46-3.1.792-.998 11.224 8.91-1.812 2.283-10.203-10.196ZM27.657 85.1a4.002 4.002 0 0 1-1.455-3.8l8.595 8.589a3.976 3.976 0 0 1-2.182-.854L27.656 85.1Z"
+                  fill="#000"
+                />
+                <path
+                  d="M47.471 42.902c.37-.643.799-1.266 1.272-1.851a1.402 1.402 0 0 0-2.18-1.764c-.566.7-1.078 1.444-1.522 2.214a1.403 1.403 0 1 0 2.43 1.4ZM40.692 64.715a1.405 1.405 0 0 0 2.188-.613 44.488 44.488 0 0 0 2.744-14.53c.017-.822.104-1.642.26-2.438a1.402 1.402 0 1 0-2.751-.54 16.991 16.991 0 0 0-.313 2.922 41.692 41.692 0 0 1-2.571 13.616 1.403 1.403 0 0 0 .443 1.583ZM68.198 62.792a1.402 1.402 0 0 0-1.898-.572c-.99.532-2.052.946-3.157 1.229a1.402 1.402 0 1 0 .697 2.716 16.853 16.853 0 0 0 3.787-1.474 1.402 1.402 0 0 0 .572-1.9ZM68.36 38.889c6.056 4.806 7.072 13.644 2.265 19.7-.273.343-.564.678-.865.993a1.402 1.402 0 0 0 2.028 1.937c.36-.377.708-.776 1.034-1.187 5.768-7.267 4.549-17.872-2.718-23.64a1.402 1.402 0 1 0-1.743 2.197ZM74.746 30.843c.607.482 1.49.38 1.97-.226l4.883-6.15a1.402 1.402 0 0 0-2.197-1.744l-4.882 6.15a1.402 1.402 0 0 0 .227 1.97ZM61.913 24.194a1.402 1.402 0 1 0 2.774.412l1.153-7.765a1.402 1.402 0 1 0-2.775-.412l-1.152 7.765ZM73.213 80.976l-2.884-7.3a1.402 1.402 0 1 0-2.609 1.03l2.885 7.3a1.402 1.402 0 1 0 2.608-1.03ZM45.77 19.148l2.884 7.3a1.402 1.402 0 1 0 2.608-1.03l-2.885-7.3a1.402 1.402 0 1 0-2.608 1.03ZM86.83 69.973l-6.15-4.882a1.402 1.402 0 1 0-1.743 2.197l6.15 4.882a1.402 1.402 0 0 0 1.744-2.197ZM40.272 34.807a1.402 1.402 0 0 0-.226-1.97l-6.15-4.883a1.402 1.402 0 0 0-1.744 2.197l6.15 4.882c.607.482 1.489.38 1.97-.226ZM84.283 54.97c.186.148.413.25.665.288l7.764 1.153a1.402 1.402 0 1 0 .412-2.775l-7.764-1.152a1.402 1.402 0 0 0-1.077 2.486ZM34.034 44.867l-7.764-1.153a1.402 1.402 0 0 0-.412 2.774l7.765 1.153a1.402 1.402 0 0 0 .411-2.774ZM82.316 41.045a1.402 1.402 0 0 0 1.82.789l7.3-2.885a1.402 1.402 0 0 0-1.03-2.609l-7.301 2.885a1.402 1.402 0 0 0-.789 1.82Z"
+                  fill="#000"
+                />
+              </svg>
             </div>
-          </li>
-          <li>
-            <img src="./images/lesson-bro.png" alt="Lesson" width="390" height="282" />
-            <h3>Live online classes</h3>
-            <p>Interactive group classes with expert teachers. Free 7-day trial</p>
-            <div>
-              <p>£12.99<span> per month</span></p>
-            </div>
-          </li>
-          <li>
-            <img src="./images/webinar-bro.png" alt="Webinar" width="340" height="340" />
-            <h3>Personal Tuition</h3>
-            <p>Online one-to-one English tutoring – enjoy our first session for only $1</p>
-            <div>
-              <p>£20.99<span> per month</span></p>
-            </div>
-          </li>
-        </ul>
+            <p class="hero-text">
+              With our teachers who write a program for each student, you will be able to make your
+              first sketch after the first lesson.
+            </p>
+            <a href="#" class="hero-link">Get started</a>
+          </div>
+          <img
+            src="./images/learning-languages-bro.png"
+            alt="learning"
+            width="661"
+            class="hero-img"
+          />
+        </div>
       </section>
-      <section>
-        <img src="./images/mailing.png" alt="Mailing us" width="476" height="428" />
-        <h2 id="contacts">Contzzsact Us</h2>
-        <p>
-          Discover your current English level by taking our free online English test.Sign up to our
-          newsletter for learning tips and free resources
-        </p>
-        <div></div>
+      <section id="skills" class="skills-section">
+        <div class="container">
+          <h2 class="skills-title">Skills</h2>
+          <ul class="skills-list">
+            <li class="skills-item">
+              <img
+                class="skills-item-img"
+                src="./images/shared-goals-bro.png"
+                alt="speaks"
+                width="390"
+                height="390"
+              />
+              <div class="skills-text-container">
+                <h3 class="skills-item-title">Speaking</h3>
+                <p class="skills-item-text skills-item-top-text">
+                  Improve your English skills and confidence. Live classes and interactive lessons
+                  online. 20% extra free for a limited time only
+                </p>
+                <p class="skills-item-text skills-item-bottom-text">
+                  Learn English online and improve your skills through our high-quality courses and
+                  resources – all designed for adult language learners.
+                </p>
+                <a href="" class="skills-item-link">Learn more</a>
+              </div>
+            </li>
+            <li class="skills-item">
+              <img
+                class="skills-item-img"
+                src="./images/typewriter.png"
+                alt="writing"
+                width="292"
+                height="292"
+              />
+              <div class="skills-text-container">
+                <h3 class="skills-item-title">Writing</h3>
+                <p class="skills-item-text">
+                  One of the most important and extensive areas of natural science, the science that
+                  studies substances, also their composition
+                </p>
+                <a href="" class="skills-item-link">Learn more</a>
+              </div>
+            </li>
+            <li class="skills-item">
+              <img
+                class="skills-item-img"
+                src="./images/bookshelves.png"
+                alt="reading"
+                width="370"
+                height="246"
+              />
+              <div class="skills-text-container">
+                <h3 class="skills-item-title">Reading</h3>
+                <p class="skills-item-text">
+                  perception and response actions of the user resulting from the use and/or upcoming
+                  use of the product, system or service
+                </p>
+                <a href="" class="skills-item-link">Learn more</a>
+              </div>
+            </li>
+            <li class="skills-item">
+              <div class="skills-text-container">
+                <h3 class="skills-item-title">Listening</h3>
+                <p class="skills-item-text">
+                  Here you can find activities to practise your listening skills. Listening will
+                  help you to improve your understanding
+                </p>
+                <a href="" class="skills-item-link">Learn more</a>
+              </div>
+              <img
+                class="skills-item-img"
+                src="./images/podcast.png"
+                alt="listening"
+                width="382"
+                height="254"
+              />
+            </li>
+          </ul>
+        </div>
+      </section>
+      <section id="about-us" class="about-us-section">
+        <div class="container about-us-container">
+          <div class="about-us-content-container">
+            <h2 class="abous-title">About Us</h2>
+            <p class="about-us-text">
+              The model offers a framework for discussing problems related to the user's experience,
+              as well as possible ways and means of solving them. Application development begins at
+              the top level (strategy), where the future software product is described quite
+              abstractly from the point of view of the expectations of both users and the customer.
+            </p>
+            <ul class="about-us-list">
+              <li class="about-us-item">
+                <p class="about-us-item-top-text">800</p>
+                <p class="about-us-item-bottom-text">Pupils</p>
+              </li>
+              <li class="about-us-item">
+                <p class="about-us-item-top-text">18</p>
+                <p class="about-us-item-bottom-text">Teacher</p>
+              </li>
+              <li class="about-us-item">
+                <p class="about-us-item-top-text">6</p>
+                <p class="about-us-item-bottom-text">Foreign languages</p>
+              </li>
+            </ul>
+          </div>
+          <img
+            class="about-us-img"
+            src="./images/business-competition.png"
+            alt="coin"
+            width="500"
+          />
+        </div>
+      </section>
+      <section id="pricing" class="prices-section">
+        <div class="container">
+          <h2 class="prices-title">Pricing</h2>
+          <ul class="prices-list">
+            <li class="prices-item">
+              <img
+                class="prices-item-img"
+                src="./images/online-test.png"
+                alt="studying"
+                width="310"
+              />
+              <h3 class="prices-item-title">Self-study online course</h3>
+              <p class="prices-item-top-text">
+                Start learning English online in live classes with qualified EC teachers and
+                students from all over the world.
+              </p>
+              <p class="prices-item-bottom-text">
+                &#163;5.99<span class="prices-item-accent-text">per month</span>
+              </p>
+            </li>
+            <li class="prices-item">
+              <img
+                class="prices-item-img"
+                src="./images/lesson-bro.png"
+                alt="lesson"
+                width="390"
+                width="283"
+              />
+              <h3 class="prices-item-title">Live online classes</h3>
+              <p class="prices-item-top-text">
+                Interactive group classes with expert teachers. Free 7-day trial
+              </p>
+              <p class="prices-item-bottom-text">
+                &#163;12.99<span class="prices-item-accent-text">per month</span>
+              </p>
+            </li>
+            <li class="prices-item">
+              <img
+                class="prices-item-img"
+                src="./images/webinar-bro.png"
+                alt="tuition"
+                width="340"
+              />
+              <h3 class="prices-item-title">Personal Tuition</h3>
+              <p class="prices-item-top-text">
+                Online one-to-one English tutoring – enjoy our first session for only $1
+              </p>
+              <p class="prices-item-bottom-text">
+                &#163;20.99<span class="prices-item-accent-text">per month</span>
+              </p>
+            </li>
+          </ul>
+        </div>
+      </section>
+      <section id="contacts" class="contacts-section">
+        <div class="container contacts-container">
+          <img class="contacts-img" src="./images/mailing.png" alt="mailing" width="476" />
+          <div class="contacts-content-container">
+            <h2 class="contacts-title">Contact Us</h2>
+            <p class="contacts-text">
+              Discover your current English level by taking our free online English test.Sign up to
+              our newsletter for learning tips and free resources
+            </p>
+          </div>
+        </div>
       </section>
     </main>
-    <footer>
-      <a href="./index.html">Britlex</a>
-      <ul>
-        <li>
-          <a href="#">Terms and Conditions</a>
-        </li>
-        <li>
-          <a href="#">Privacy Policy</a>
-        </li>
-        <li>
-          <a href="#">Cookie Policy</a>
-        </li>
-      </ul>
+    <footer class="footer">
+      <div class="container">
+        <div class="footer-container">
+          <a href="./index.html" class="footer-logo logo"
+            ><span class="logo-accent">Brit</span>lex</a
+          >
+          <ul class="footer-list">
+            <li class="footer-item"><a class="footer-link" href="">Terms and Conditions</a></li>
+            <li class="footer-item"><a class="footer-link" href="">Privacy Policy</a></li>
+            <li class="footer-item"><a class="footer-link" href="">Cookie Policy</a></li>
+          </ul>
+        </div>
+      </div>
     </footer>
   </body>
 </html>
