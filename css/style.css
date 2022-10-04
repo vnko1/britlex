@@ -142,7 +142,10 @@ img {
 }
 
 /* ------------SKILLS----------- */
-/* 
+
+.skills-section {
+}
+
 .skills-title {
   margin-bottom: 92px;
   text-align: center;
@@ -188,43 +191,52 @@ img {
 
 .skills-item:nth-child(1) {
   width: 435px;
-  height: 894px;
+  padding-top: 35px;
+  padding-bottom: 92px;
 }
 
 .skills-item:nth-child(1) .skills-item-img {
-  margin-bottom: 4px;
   margin-left: auto;
   margin-right: auto;
 }
 
 .skills-item:nth-child(1) .skills-text-container {
   padding-left: 43px;
-  padding-bottom: 92px;
   padding-right: 45px;
 }
 
-.skills-item:nth-child(1) .skills-item-title {
+/* .skills-item:nth-child(1) .skills-item-title {
   margin-bottom: 4px;
-}
+} */
 
 .skills-item:nth-child(1) .skills-item-text {
-  margin-bottom: 36px;
+  margin-bottom: 33px;
 }
 
 .skills-item:nth-child(2) {
   width: 434px;
-  height: 531px;
+  align-self: flex-start;
 }
 
 .skills-item:nth-child(2) .skills-item-img {
-  margin-bottom: 4px;
-  margin-left: 122px;
-  margin-right: 24px;
+  margin-left: auto;
+  margin-right: 19px;
+}
+
+.skills-item-thumb {
+  position: relative;
+}
+
+.skills-item-thumb .skills-item-title {
+  position: absolute;
+  top: 251px;
+  left: 42px;
 }
 
 .skills-item:nth-child(2) .skills-text-container {
   padding-left: 41px;
-  padding-bottom: 44px;
+  padding-top: 33px;
+  padding-bottom: 40px;
   padding-right: 51px;
 }
 
@@ -234,15 +246,49 @@ img {
 
 .skills-item:nth-child(3) {
   width: 435px;
-  height: 532px;
+  align-self: flex-start;
+}
+
+.skills-item:nth-child(3) .skills-item-img {
+  margin-right: auto;
+}
+
+.skills-item:nth-child(3) .skills-text-container {
+  padding-left: 41px;
+  padding-bottom: 44px;
+  padding-right: 38px;
+}
+
+.skills-item:nth-child(3) .skills-item-text {
+  margin-bottom: 30px;
+}
+
+.skills-list {
+  position: relative;
 }
 
 .skills-item:nth-child(4) {
   width: 885px;
-  height: 343px;
-  align-self: flex-end;
-  justify-self: center;
-} */
+  display: flex;
+  position: absolute;
+  left: 453px;
+  top: 548px;
+}
+
+.skills-item:nth-child(4) .skills-text-container {
+  padding: 43px 0 68px;
+  margin-left: 48px;
+  margin-right: 102px;
+}
+
+.skills-item:nth-child(4) .skills-item-img {
+  padding-top: 44px;
+}
+
+.skills-item:nth-child(4) .skills-item-text {
+  max-width: 328px;
+  margin-bottom: 20px;
+}
 
 /* -------------ABOUT US------------------- */
 
@@ -431,7 +477,7 @@ img {
 
 .footer-list {
   display: flex;
-  gap: 40px;
+  gap: 22px;
   list-style: disc;
 }
 
