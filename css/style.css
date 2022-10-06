@@ -195,9 +195,9 @@ img {
   padding-bottom: 92px;
 }
 
-.skills-item:nth-child(1) .skills-item-img {
-  margin-left: auto;
-  margin-right: auto;
+.skills-item:nth-child(1) .skills-item-img-thumb {
+  padding-left: 23px;
+  padding-right: 22px;
 }
 
 .skills-item:nth-child(1) .skills-text-container {
@@ -218,9 +218,10 @@ img {
   align-self: flex-start;
 }
 
-.skills-item:nth-child(2) .skills-item-img {
-  margin-left: auto;
-  margin-right: 19px;
+.skills-item:nth-child(2) .skills-item-img-thumb {
+  display: flex;
+  justify-content: end;
+  padding-right: 19px;
 }
 
 .skills-item-thumb {
@@ -249,8 +250,7 @@ img {
   align-self: flex-start;
 }
 
-.skills-item:nth-child(3) .skills-item-img {
-  margin-right: auto;
+.skills-item:nth-child(3) .skills-item-img-thumb {
 }
 
 .skills-item:nth-child(3) .skills-text-container {
@@ -281,7 +281,7 @@ img {
   margin-right: 102px;
 }
 
-.skills-item:nth-child(4) .skills-item-img {
+.skills-item:nth-child(4) .skills-item-img-thumb {
   padding-top: 44px;
 }
 
@@ -356,8 +356,11 @@ img {
   max-width: 418px;
 }
 
-.prices-item:nth-child(1) .prices-item-img {
-  margin: 0 auto 40px;
+.prices-item:nth-child(1) .prices-item-thumb {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 40px;
 }
 
 .prices-item:nth-child(1) .prices-item-title {
@@ -365,15 +368,18 @@ img {
 }
 
 .prices-item:nth-child(1) .prices-item-top-text {
-  margin-bottom: 29px;
+  margin-bottom: 42px;
 }
 
 .prices-item:nth-child(2) {
   max-width: 390px;
 }
 
-.prices-item:nth-child(2) .prices-item-img {
-  margin-bottom: 65px;
+.prices-item:nth-child(2) .prices-item-thumb {
+  display: flex;
+  justify-content: start;
+  padding-top: 24px;
+  margin-bottom: 42px;
 }
 
 .prices-item:nth-child(2) .prices-item-title {
@@ -381,19 +387,21 @@ img {
 }
 
 .prices-item:nth-child(2) .prices-item-top-text {
-  margin-bottom: 54px;
+  margin-bottom: 64px;
 }
 
 .prices-item:nth-child(3) {
   max-width: 435px;
 }
 
-.prices-item:nth-child(3) .prices-item-img {
-  margin: 0 auto 7px;
+.prices-item:nth-child(3) .prices-item-thumb {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 11px;
 }
 
 .prices-item:nth-child(3) .prices-item-title {
-  margin-bottom: 23px;
+  margin-bottom: 30px;
 }
 
 .prices-item:nth-child(3) .prices-item-top-text {
